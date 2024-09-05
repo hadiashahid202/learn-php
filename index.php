@@ -4,13 +4,10 @@
 <html>
 <head>
 	<title>The Fundamentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+	<?php require "Database.php"; ?>
 	<?php require "main.php"; ?>
-	<?php foreach ($filteredBooks as $book): ?>
-	<ul>
-		<li><?= $book['name']; ?> (<?= $book['releaseyear']; ?>) By <?= $book['author']; ?></li>
-	</ul>
-	<?php endforeach; ?>
 </body>
 </html>
